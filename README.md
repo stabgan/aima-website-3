@@ -1,15 +1,52 @@
-# AIMA 3rd Website .
+# AIMA Exercises — Website v3 (Material Design)
 
-I made this website to showcase my skills in designing a material design website .
-I took inspiration from Google's Material design and made everything from scratch within a day . 
+Material Design-inspired website for exercises from *Artificial Intelligence: A Modern Approach* by Stuart Russell and Peter Norvig.
 
-There is only few exercises for demonstration .
+## What It Does
 
-The website is live at : https://kaustabhganguly.github.io/aima-website-3
+Presents AIMA textbook exercises in a card-based Material Design interface. Features a table of contents landing page with chapter cards, and individual exercise pages with a fixed sidebar navigation. Currently includes two fully implemented exercise chapters (Introduction and Logical Agents) as a design demonstration.
 
-Exercises up:
+## Architecture
 
-- Introduction
-- Logical Agents(Knowledge Logic Exercise)
+Pure HTML/CSS static site with no build tools. Uses Bootstrap 4 for grid layout and custom CSS for the Material Design card aesthetic. Exercise pages feature a fixed sidebar nav and card-style exercise blocks with MathJax for LaTeX rendering.
 
-# This website is purely made to show advanced styling and my ability to replicate any design I think of into practical project . Here I tried to replicate Google's material design .
+## 🛠 Tech Stack
+
+| | Technology | Purpose |
+|---|---|---|
+| 🎨 | HTML / CSS | Structure and Material Design styling |
+| 📐 | Bootstrap 4 | Grid layout |
+| 🔢 | MathJax 2.7 | LaTeX math rendering (exercise pages) |
+
+## Getting Started
+
+No build step required:
+
+```bash
+python3 -m http.server 8000
+# Open http://localhost:8000
+```
+
+## Project Structure
+
+```
+├── index.html                  # Landing page / table of contents
+├── intro_exercise_card.html    # Ch.1 Introduction exercises
+├── knowledge_logic_card.html   # Ch.7 Logical Agents exercises
+├── css/
+│   ├── bootstrap*.css          # Bootstrap 4 framework
+│   ├── cards.css               # Landing page card styles
+│   └── cards-exercise.css      # Exercise page card styles
+└── js/
+    └── bootstrap*.js           # Bootstrap JS
+```
+
+## ⚠️ Known Issues
+
+- Only 2 of 27 chapters have exercise pages implemented; remaining TOC links point to nonexistent files.
+- Uses non-standard `<text>` HTML elements (works but not semantic).
+- Search bar on landing page is non-functional (placeholder UI only).
+
+## License
+
+MIT — © Peter Norvig. Design by Kaustabh Ganguly.

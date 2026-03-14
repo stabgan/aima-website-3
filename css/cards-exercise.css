@@ -29,7 +29,7 @@ h1,h2,h3,h4,h5,h6{font-weight:bold;font-family:'Open Sans','Helvetica Neue',Helv
             font-family: luminari;
             font-weight: bolder;
             font-size: 4vw;
-            line-height: auto;
+            line-height: normal;
             z-index: 9999;
             margin: auto;
         }
@@ -107,7 +107,7 @@ h1,h2,h3,h4,h5,h6{font-weight:bold;font-family:'Open Sans','Helvetica Neue',Helv
                     text-decoration: none;
                     color: #000;
                     padding: 0;
-                    background-color: none;
+                    background-color: transparent;
             
             
         }
